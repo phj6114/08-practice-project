@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../UI/Card";
+import Button from "../UI/Button";
 import classes from "./AddUser.module.css";
 
 const AddUser = (props) => {
@@ -17,7 +18,8 @@ const AddUser = (props) => {
         <input id="username" type="text" />
         <label htmlFor="age">Age (Years)</label>
         <input id="age" type="text" />
-        <button type="submit">Add User</button>
+        <Button type="submit">Add User</Button>
+        {/*버튼 컴포넌트로 "Add User"라는 프로퍼티를 전송할 수 있음*/}
       </form>
     </Card>
   );
