@@ -9,7 +9,7 @@ const Button = (props) => {
       type={props.type || "button"}
       onClick={props.onClick}
     >
-      {props.children}{" "}
+      {props.children}
       {/*버튼 태그의 컨텐츠(Add User)를 가져오고 싶을 때 사용 */}
     </button>
   );
