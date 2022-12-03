@@ -3,6 +3,7 @@ import Card from "../UI/Card";
 import Button from "../UI/Button";
 import ErrorModal from "../UI/ErrorModal";
 import classes from "./AddUser.module.css";
+import Wrapper from "../Helpers/Wrapper";
 
 const AddUser = (props) => {
   const [enteredUsername, setEnteredUsername] = useState("");
@@ -46,7 +47,7 @@ const AddUser = (props) => {
   사용자 정의 컴포넌트들은 이 className이라는 속성과
    * 어떻게 작업 해야하는지 모른다. 따라서 Card컴포넌트에서 별도의 처리를 해줘야 한다.*/
   return (
-    <div>
+    <Wrapper>
       {error && (
         <ErrorModal
           title={error.title}
@@ -74,7 +75,7 @@ const AddUser = (props) => {
           {/*버튼 컴포넌트로 "Add User"라는 프로퍼티를 전송할 수 있음*/}
         </form>
       </Card>
-    </div>
+    </Wrapper>
   );
 };
 
